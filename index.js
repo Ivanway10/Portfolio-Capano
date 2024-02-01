@@ -1,3 +1,26 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Define las opciones para Typed.js
+  var options = {
+    strings: ["Full Stack Developer", "Project Manager", "EDI Specialist"],
+    typeSpeed: 50,     // Velocidad de tipeado en milisegundos
+    backSpeed: 30,     // Velocidad al borrar el texto en milisegundos
+    backDelay: 1000,   // Tiempo de espera después de borrar el texto en milisegundos
+    startDelay: 500,   // Tiempo de espera antes de empezar el tipeado en milisegundos
+    loop: true         // Repetir la animación
+  };
+
+  // Selecciona el elemento que contiene el título
+  var titleElement = document.querySelector('.home__title--secondary');
+
+  // Inicializa Typed.js en el elemento seleccionado
+  var typed = new Typed(titleElement, options);
+});
+
+
+
+//Smooth scroll
+
 const navbar = document.querySelector(".navbar");
 const homebg = document.querySelector(".home__background");
 const menu = document.querySelector(".navbar__menu");
@@ -80,20 +103,3 @@ ScrollReveal().reveal(".footer", { delay: 450 });
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Define las opciones para Typed.js
-  var options = {
-    strings: ["Full Stack Developer", "Project Manager", "EDI Specialist"],
-    typeSpeed: 50,     // Velocidad de tipeado en milisegundos
-    backSpeed: 30,     // Velocidad al borrar el texto en milisegundos
-    backDelay: 1000,   // Tiempo de espera después de borrar el texto en milisegundos
-    startDelay: 500,   // Tiempo de espera antes de empezar el tipeado en milisegundos
-    loop: true         // Repetir la animación
-  };
-
-  // Selecciona el elemento que contiene el título
-  var titleElement = document.querySelector('.home__title--secondary');
-
-  // Inicializa Typed.js en el elemento seleccionado
-  var typed = new Typed(titleElement, options);
-});
